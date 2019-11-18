@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Обновить товар{% endblock %}
+{% block content %}
+    <h3 class="text-center">Товар {{ product }} будет отмечен, что его нет в наличии!</h3>
+    <form class="text-center" action="{% url "webapp:product_delete" product.pk %}"
+          method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="submit" value="ОК" class="btn btn-danger">
+        <a href="{% url 'webapp:index' %}" class="btn btn-secondary">Отмена</a>
+    </form>
+{% endblock %}

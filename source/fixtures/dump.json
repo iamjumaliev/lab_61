@@ -1,0 +1,190 @@
+[
+{
+  "model": "webapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "\u042f\u0431\u043b\u043e\u043a\u0438",
+    "category": "food",
+    "photo": "product_images/2374-ed4_wide.jpg",
+    "price": "50.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "\u0413\u0440\u0443\u0448\u0438",
+    "category": "food",
+    "photo": "product_images/grusha.jpg",
+    "price": "40.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "\u0414\u0436\u0438\u043d\u0441\u044b \u0436\u0435\u043d\u0441\u043a\u0438\u0435",
+    "category": "clothes",
+    "photo": "product_images/01_1526.jpg",
+    "price": "2000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "\u0421\u0440\u0435\u0434\u0441\u0442\u0432\u043e \u0434\u043b\u044f \u043c\u044b\u0442\u044c\u044f \u043f\u043e\u0441\u0443\u0434\u044b",
+    "category": "household",
+    "photo": "product_images/14306911.jpeg",
+    "price": "180.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "name": "\u041e\u0431\u044b\u0447\u043d\u044b\u0439 \u043f\u043e\u0440\u043e\u0448\u043e\u043a",
+    "category": "household",
+    "photo": "product_images/239.750.jpg",
+    "price": "100.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "name": "\u0428\u0430\u0440\u0438\u043a\u0438 \u0441 \u0433\u0435\u043b\u0438\u0435\u043c",
+    "category": "other",
+    "photo": "product_images/Pa2E3TtXqHKCUDAumY.jpg",
+    "price": "70.00"
+  }
+},
+{
+  "model": "webapp.order",
+  "pk": 1,
+  "fields": {
+    "user": null,
+    "first_name": "\u0424\u0430\u0440\u0438\u0434",
+    "last_name": "\u0425\u0430\u043b\u0438\u043a\u043e\u0432",
+    "email": "someq@mail.ru",
+    "phone": "+123456789",
+    "status": "new",
+    "created_at": "2019-11-07T15:04:42.081Z",
+    "updated_at": "2019-11-07T15:04:42.081Z"
+  }
+},
+{
+  "model": "webapp.order",
+  "pk": 2,
+  "fields": {
+    "user": null,
+    "first_name": "asd",
+    "last_name": "asd",
+    "email": "asd@asd.com",
+    "phone": "123",
+    "status": "new",
+    "created_at": "2019-11-07T15:10:27.264Z",
+    "updated_at": "2019-11-07T15:10:27.264Z"
+  }
+},
+{
+  "model": "webapp.order",
+  "pk": 3,
+  "fields": {
+    "user": null,
+    "first_name": "Test",
+    "last_name": "test",
+    "email": "som@som.com",
+    "phone": "1234",
+    "status": "new",
+    "created_at": "2019-11-10T16:07:44.075Z",
+    "updated_at": "2019-11-10T16:07:44.075Z"
+  }
+},
+{
+  "model": "webapp.order",
+  "pk": 4,
+  "fields": {
+    "user": null,
+    "first_name": "\u043b\u044f",
+    "last_name": "\u043b\u043e\u0444\u044b\u043b\u0432\u0434",
+    "email": "12938@kajsd.cpm",
+    "phone": "\u043b\u0444\u044b\u043e\u0432",
+    "status": "new",
+    "created_at": "2019-11-10T16:41:52.108Z",
+    "updated_at": "2019-11-10T16:41:52.108Z"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 2,
+    "amount": "1.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 2,
+  "fields": {
+    "order": 1,
+    "product": 1,
+    "amount": "1.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 3,
+  "fields": {
+    "order": 1,
+    "product": 4,
+    "amount": "1.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 4,
+  "fields": {
+    "order": 1,
+    "product": 3,
+    "amount": "2.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 5,
+  "fields": {
+    "order": 2,
+    "product": 2,
+    "amount": "2.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 6,
+  "fields": {
+    "order": 2,
+    "product": 1,
+    "amount": "2.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 7,
+  "fields": {
+    "order": 3,
+    "product": 2,
+    "amount": "1.00"
+  }
+},
+{
+  "model": "webapp.orderproduct",
+  "pk": 8,
+  "fields": {
+    "order": 4,
+    "product": 2,
+    "amount": "1.00"
+  }
+}
+]

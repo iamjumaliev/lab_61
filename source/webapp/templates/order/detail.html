@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}{{ object }}{% endblock %}
+{% block content %}
+    <div class="text-center">
+        <h1>{{ order }}</h1>
+        <div class="row">
+        </div>
+
+        <p><b>Имя:</b> {{ object.first_name }}</p>
+        <p><b>Фамилия:</b> {{ object.last_name }} </p>
+        <p><b>Телефон:</b> {{ object.phone }}</p>
+         <p><b>Товары: {% for product_in_order in order.orderproduct_set.all %}</b></p>
+
+           <h4>{{ product_in_order.product }} <form action="{% url 'webapp:product_delete_from_order' product_in_order.pk %}" method="POST">
+                    {% csrf_token %}
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                       <a href="{% url "webapp:order_order_create" order.pk %}" class="btn btn-primary">Редактировать</a>
+
+                </form></h4>
+             <span class="float-right">
+
+            </span>
+        {% endfor %}
+        <p><b>Статус:</b> {{ object.status }} </p>
+        <a href="{% url "webapp:order_update" order.pk %}" class="btn btn-primary">Редактировать заказ</a>
+        <a href="{% url "webapp:order_order_create" order.pk %}" class="btn btn-primary">Добавить товар на заказ</a>
+{% endblock %}
